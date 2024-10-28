@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ruda:wght@400..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #F2F2F2;
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: #CCFF00;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  color: #CCFF00;
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h3 {
+  color: #F2F2F2;
+  font-family: "Ruda", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  line-height: 25px;
+  width: 100%;
+  margin: 10px auto 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 800px;
+}
+
+.card {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(236, 236, 236, 0.104); /* Soft shadow for the card */
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 10px;
+  background-color: #CCFF00;
+  border-radius: 5px;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.button-link:hover {
+  color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+ul li a {
+  color: #F2F2F2;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #007bff;
+}
+
+#img-profile {
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 150px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
